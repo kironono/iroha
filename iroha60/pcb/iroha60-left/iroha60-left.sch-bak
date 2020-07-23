@@ -102,8 +102,6 @@ Text GLabel 2675 6250 2    50   Input ~ 0
 col5
 Text GLabel 2675 6350 2    50   Input ~ 0
 col6
-NoConn ~ 1275 5750
-NoConn ~ 1275 5850
 NoConn ~ 1275 6450
 NoConn ~ 2675 5350
 NoConn ~ 2675 6450
@@ -1103,4 +1101,6 @@ Connection ~ 8175 2775
 Wire Wire Line
 	8175 4225 8175 3500
 Connection ~ 8175 3500
+NoConn ~ 1275 5750
+NoConn ~ 1275 5850
 $EndSCHEMATC
