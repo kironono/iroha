@@ -117,17 +117,6 @@ F 3 "~" H 6150 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP1
-U 1 1 5E053848
-P 7250 5550
-F 0 "JP1" H 7250 5325 50  0000 C CNN
-F 1 "Jumper" H 7250 5416 50  0000 C CNN
-F 2 "kbd:Jumper" H 7250 5550 50  0001 C CNN
-F 3 "~" H 7250 5550 50  0001 C CNN
-	1    7250 5550
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:VCC #PWR04
 U 1 1 5E05495B
 P 6400 5300
@@ -148,28 +137,6 @@ F 2 "" H 6400 5600 50  0001 C CNN
 F 3 "" H 6400 5600 50  0001 C CNN
 	1    6400 5600
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J1
-U 1 1 5E056F6B
-P 6775 5125
-F 0 "J1" V 6739 5037 50  0000 R CNN
-F 1 "i2c-pin" V 6648 5037 50  0000 R CNN
-F 2 "kbd:1pin_conn" H 6775 5125 50  0001 C CNN
-F 3 "~" H 6775 5125 50  0001 C CNN
-	1    6775 5125
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J3
-U 1 1 5E057B6E
-P 6775 5925
-F 0 "J3" V 6647 6005 50  0000 L CNN
-F 1 "i2c-pin" V 6738 6005 50  0000 L CNN
-F 2 "kbd:1pin_conn" H 6775 5925 50  0001 C CNN
-F 3 "~" H 6775 5925 50  0001 C CNN
-	1    6775 5925
-	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J4
@@ -278,18 +245,7 @@ Wire Wire Line
 	6400 5600 6400 5500
 Wire Wire Line
 	6400 5500 6075 5500
-Wire Wire Line
-	6075 5400 6775 5400
-Wire Wire Line
-	6775 5400 6775 5325
-Wire Wire Line
-	6075 5550 6775 5550
-Wire Wire Line
-	6775 5550 6775 5725
-Wire Wire Line
-	6950 5550 6775 5550
-Connection ~ 6775 5550
-Text GLabel 7550 5550 2    50   Input ~ 0
+Text GLabel 6950 5550 2    50   Input ~ 0
 data
 Text GLabel 4350 6450 2    50   Input ~ 0
 led
@@ -850,7 +806,7 @@ U 1 1 5E0B3332
 P 7600 4225
 F 0 "SW27" H 7600 4480 50  0000 C CNN
 F 1 "SW_PUSH" H 7600 4389 50  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 7600 4225 50  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.5U-NoLED" H 7600 4225 50  0001 C CNN
 F 3 "" H 7600 4225 50  0000 C CNN
 	1    7600 4225
 	1    0    0    -1  
@@ -1103,5 +1059,7 @@ Wire Wire Line
 Connection ~ 8175 3500
 NoConn ~ 1275 5750
 NoConn ~ 1275 5850
-NoConn ~ 4550 -975
+NoConn ~ 6075 5400
+Wire Wire Line
+	6075 5550 6950 5550
 $EndSCHEMATC
