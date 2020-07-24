@@ -19,7 +19,7 @@ U 1 1 5E04C4DC
 P 2025 6150
 F 0 "U1" H 2025 7187 60  0000 C CNN
 F 1 "ProMicro" H 2025 7081 60  0000 C CNN
-F 2 "kbd:ProMicro_v3" H 2125 5100 60  0001 C CNN
+F 2 "kbd:ProMicro_v2_1side" H 2125 5100 60  0001 C CNN
 F 3 "" H 2125 5100 60  0000 C CNN
 	1    2025 6150
 	1    0    0    -1  
@@ -106,26 +106,15 @@ NoConn ~ 1325 5800
 NoConn ~ 1325 5900
 NoConn ~ 2725 5400
 $Comp
-L kbd:MJ-4PP-9 J2
+L kbd:MJ-4PP-9 J1
 U 1 1 5E052F2D
 P 5875 5475
-F 0 "J2" H 5906 5751 50  0000 C CNN
+F 0 "J1" H 5906 5751 50  0000 C CNN
 F 1 "MJ-4PP-9" H 5906 5660 50  0000 C CNN
 F 2 "kbd:MJ-4PP-9_1side" H 6150 5650 50  0001 C CNN
 F 3 "~" H 6150 5650 50  0001 C CNN
 	1    5875 5475
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP1
-U 1 1 5E053848
-P 7250 5550
-F 0 "JP1" H 7250 5325 50  0000 C CNN
-F 1 "Jumper" H 7250 5416 50  0000 C CNN
-F 2 "kbd:Jumper" H 7250 5550 50  0001 C CNN
-F 3 "~" H 7250 5550 50  0001 C CNN
-	1    7250 5550
-	-1   0    0    1   
 $EndComp
 $Comp
 L power:VCC #PWR04
@@ -150,32 +139,10 @@ F 3 "" H 6400 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J1
-U 1 1 5E056F6B
-P 6775 5125
-F 0 "J1" V 6739 5037 50  0000 R CNN
-F 1 "i2c-pin" V 6648 5037 50  0000 R CNN
-F 2 "kbd:1pin_conn" H 6775 5125 50  0001 C CNN
-F 3 "~" H 6775 5125 50  0001 C CNN
-	1    6775 5125
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J3
-U 1 1 5E057B6E
-P 6775 5925
-F 0 "J3" V 6647 6005 50  0000 L CNN
-F 1 "i2c-pin" V 6738 6005 50  0000 L CNN
-F 2 "kbd:1pin_conn" H 6775 5925 50  0001 C CNN
-F 3 "~" H 6775 5925 50  0001 C CNN
-	1    6775 5925
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J4
+L Connector_Generic:Conn_01x03 J2
 U 1 1 5E05841F
 P 4150 6450
-F 0 "J4" H 4068 6125 50  0000 C CNN
+F 0 "J2" H 4068 6125 50  0000 C CNN
 F 1 "LED" H 4068 6216 50  0000 C CNN
 F 2 "kbd:StripLED_1side" H 4150 6450 50  0001 C CNN
 F 3 "~" H 4150 6450 50  0001 C CNN
@@ -278,18 +245,7 @@ Wire Wire Line
 	6400 5600 6400 5500
 Wire Wire Line
 	6400 5500 6075 5500
-Wire Wire Line
-	6075 5400 6775 5400
-Wire Wire Line
-	6775 5400 6775 5325
-Wire Wire Line
-	6075 5550 6775 5550
-Wire Wire Line
-	6775 5550 6775 5725
-Wire Wire Line
-	6950 5550 6775 5550
-Connection ~ 6775 5550
-Text GLabel 7550 5550 2    50   Input ~ 0
+Text GLabel 6950 5550 2    50   Input ~ 0
 data
 Text GLabel 4350 6450 2    50   Input ~ 0
 led
@@ -1239,4 +1195,7 @@ Connection ~ 8775 1650
 Text GLabel 2725 6500 2    50   Input ~ 0
 col7
 NoConn ~ 1325 6500
+Wire Wire Line
+	6075 5550 6950 5550
+NoConn ~ 6075 5400
 $EndSCHEMATC
