@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 12)
+    (drawings 13)
     (tracks 529)
     (zones 0)
     (modules 67)
@@ -2846,6 +2846,9 @@
     (pad "" np_thru_hole circle (at 5.08 0 48.0996) (size 1.75 1.75) (drill 1.75) (layers *.Cu *.Mask))
   )
 
+  (gr_text "iroha60 rev.1\nDesigned by kironono" (at 81.07875 110.83) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_line (start 19.685 113.665) (end 19.685 18.415) (layer Edge.Cuts) (width 0.05) (tstamp 5F1A87AE))
   (gr_line (start 148.2725 113.665) (end 19.685 113.665) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 148.2725 94.615) (end 148.2725 113.665) (layer Edge.Cuts) (width 0.05))
