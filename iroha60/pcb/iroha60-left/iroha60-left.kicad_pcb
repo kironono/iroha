@@ -2870,7 +2870,7 @@
     (arrow2a (pts (xy 19.685 13.6525) (xy 20.811504 14.238921)))
     (arrow2b (pts (xy 19.685 13.6525) (xy 20.811504 13.066079)))
   )
-  (gr_text "iroha60 rev.1\nDesigned by kironono" (at 81.07875 110.83) (layer F.SilkS)
+  (gr_text "iroha60 rev.1 2020-08-12\nDesigned by kironono" (at 81.07875 110.83) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_line (start 19.685 113.665) (end 19.685 18.415) (layer Edge.Cuts) (width 0.05) (tstamp 5F1A87AE))
