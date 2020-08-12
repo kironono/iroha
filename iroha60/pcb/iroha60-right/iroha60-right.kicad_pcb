@@ -89,7 +89,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "iroha60-right-pub-rev1_2020-08-12/"))
   )
 
   (net 0 "")
@@ -4424,7 +4424,7 @@
   (segment (start 164.437828 86.6775) (end 166.832827 84.282501) (width 0.25) (layer F.Cu) (net 57))
   (segment (start 163.45 86.6775) (end 164.437828 86.6775) (width 0.25) (layer F.Cu) (net 57))
 
-  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 5F1BFB0A) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 5F33F995) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -7366,7 +7366,7 @@
       )
     )
   )
-  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 5F1BFB07) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 5F33F992) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
